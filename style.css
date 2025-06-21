@@ -1,22 +1,45 @@
-a:visited{
-  color: white;
-}
-a{
-  text-decoration: none;
-}
-
 body {
+  height: 100%;
+  margin: 0;
   font-family: Verdana, sans-serif;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   color: #003ea9;
-  margin:0;
 }
-
-header {  
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
+header {
   background-color: #003ea9;
   padding: 1rem;
 }
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
 
+nav a {
+  text-decoration: none;
+  color: #faf6e6;
+  font-weight: bold;
+}
 
+nav a:visited {
+  color: white;
+}
 
-
+nav a:hover {
+  text-decoration: underline;
+}
+footer {
+  background-color: #003ea9;
+  color: #faf6e6;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
